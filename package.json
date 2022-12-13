@@ -1,0 +1,25 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmfehr/caps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmfehr/caps/issues"
+  },
+  "homepage": "https://github.com/hmfehr/caps#readme",
+  "dependencies": {
+    "chance": "^1.1.9",
+    "eslint": "^8.29.0",
+    "jest": "^29.3.1"
+  }
+}
