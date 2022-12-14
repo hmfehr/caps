@@ -1,15 +1,15 @@
 'use strict';
 
-const eventPool = require('../eventPool');
-const { pickupInTransit, deliveryHandler } = require('./handlers');
+const { io } = require('socket.io-client');
+const socket = io('http://localhost:3001/caps');
+const {pickupInTransit, deliveryHandler} = require('./driverHandler');
 
-eventPool.on('PICKUP', driverHandler);
-
+socket.on('PICKUP', driverHandler);
 function driverHandler(payload){
   setTimeout(() => {
-    pickupInTransit(payload);
-  }, 1000);
+    pickupInTransit(payload)
+  },1000);
   setTimeout(() => {
-    deliveryHandler(payload);
-  }, 2000);
+    deliveryHandler(payload)
+  },2000)
 }
