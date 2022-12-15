@@ -5,7 +5,7 @@ const chance = new Chance();
 
 const generateOrder = (socket) => (payload = null) => {
   payload = payload ? payload : {
-    'vendorId' : '1-206-flowers',
+    'vendorId' : 'flowers',
     'orderId' : chance.guid(),
     'customer': chance.name(),
     'address': chance.address(),

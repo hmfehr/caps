@@ -8,7 +8,7 @@ const { generateOrder, thankDriver } = require('./acmeHandler');
 let socket = require('../socket-client');
 const requestPickup = generateOrder(socket);
 
-let vendorId = 'acme-widgets';
+let vendorId = 'acme';
 
 // JOINs the 1-206-flowers room
 socket.emit('JOIN', vendorId);
